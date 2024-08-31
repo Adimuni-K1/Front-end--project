@@ -1,0 +1,43 @@
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .dropdown {
+    position: relative; /* Position relative to allow absolute positioning of dropdown content */
+    margin-left: 20px;
+    
+}
+
+
+.nav-links .dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute; /* Position absolutely to the parent */
+    background-color: white; /* Set background color to yellow */
+    min-width: 160px; /* Set minimum width for dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Make sure dropdown appears above other elements */
+    padding: 12px 0; /* Add padding to the dropdown */
+    border-radius: 5px;
+    list-style: none; /* Remove bullet points from list */
+}
+
+.nav-links .dropdown-content li {
+    padding: 8px 16px;
+}
+
+.nav-links .dropdown-content li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: green; /* Set text color to green */
+    display: block; /* Make dropdown items block elements */
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.nav-links .dropdown-content li a:hover {
+    background-color: #e30b0b; /* Change background on hover for dropdown items */
+    color: gold; /* Change text color to gold on hover */
+}
